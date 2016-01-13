@@ -1,0 +1,8 @@
+{release,{"ria_ast_manager_release","1"},
+         {erts,"7.1"},
+         [{kernel,"4.1"},
+          {stdlib,"2.6"},
+          {ria_ast_manager,"0.0.1"},
+          {runtime_tools,"1.9.1"},
+          {observer,"2.1"},
+          {wx,"1.5"}]}. 
