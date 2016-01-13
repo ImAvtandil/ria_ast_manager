@@ -1,4 +1,4 @@
-%% script generated at {2016,1,13} {11,1,21}
+%% script generated at {2016,1,13} {12,11,13}
 {script,
     {"ria_ast_manager_release","1"},
     [{preLoaded,
@@ -36,7 +36,9 @@
           qlc,qlc_pt,queue,rand,random,re,sets,shell,shell_default,slave,sofs,
           string,supervisor,supervisor_bridge,sys,timer,unicode,win32reg,zip]},
      {path,["$ROOT/lib/ria_ast_manager-0.0.1/ebin"]},
-     {primLoad,[ria_ast_manager_app,ria_ast_manager_sup]},
+     {primLoad,
+         [ast_parser,event_processor,ria_ast_manager,ria_ast_manager_app,
+          ria_ast_manager_sup,ria_ast_server]},
      {path,["$ROOT/lib/runtime_tools-1.9.1/ebin"]},
      {primLoad,
          [appmon_info,dbg,dyntrace,erts_alloc_config,observer_backend,
@@ -189,7 +191,10 @@
                   [{description,"New project"},
                    {vsn,"0.0.1"},
                    {id,[]},
-                   {modules,[ria_ast_manager_app,ria_ast_manager_sup]},
+                   {modules,
+                       [ast_parser,event_processor,ria_ast_manager,
+                        ria_ast_manager_app,ria_ast_manager_sup,
+                        ria_ast_server]},
                    {registered,[ria_ast_manager_sup]},
                    {applications,[kernel,stdlib]},
                    {included_applications,[]},
